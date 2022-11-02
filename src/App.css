@@ -1,38 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1 {
+  font-size: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 22px 0px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.buy-btn {
+  height: 40px;
+  width: 100px;
   color: white;
+  background: #2d91e1;
+  border: 2px solid #2782d1;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px darkgray;
 }
-
-.App-link {
-  color: #61dafb;
+.buy-btn:active {
+  box-shadow: none;
+  transform: translateY(3px);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buy-btn:hover {
+  background: #185b93;
+}
+.selected {
+  width: 80%;
+  height: 60px;
+  background: #efefef;
+  border: 1px solid #00f;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 5px;
+  box-shadow: inset 2px 2px 5px grey, inset -2px -2px 5px grey;
+}
+.notSelected {
+  width: 80%;
+  height: 60px;
+  background: #efefef;
+  border: 1px solid #00f;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+.price-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+}
+.price {
+  font-size: 30px;
 }
